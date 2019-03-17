@@ -20,7 +20,7 @@
   let md = document.getElementById('markdown-area');
   getBlogPostsConf()
   .then(fileNames => {
-    Promise.all(fileNames.map(f => fetch('/blog-posts/' + f)))
+    Promise.all(fileNames.map(f => fetch('blog-posts/' + f)))
     .then(responses => Promise.all(responses.map(res => res.text()))
     ).then(posts => {
       md.innerHTML = makePostsHtml(posts);
