@@ -1,0 +1,27 @@
+{
+  "name": "blog-example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "marked": "^0.6.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files \"css/*.css,src/*.js,*.html\" -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machinegirl/blog-example.git"
+  },
+  "author": "Daphne Volante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machinegirl/blog-example/issues"
+  },
+  "homepage": "https://github.com/machinegirl/blog-example#readme"
+}
+
